@@ -17,9 +17,9 @@
   // Optional Instructions (Especially if you didn't clone the vscode-eos-open-contract repo into a folder with your project name):
   //  * Replace ${localWorkspaceFolderBasename} with the name of your smart contract project
   "name": "${localWorkspaceFolderBasename}",
-  "workspaceMount": "type=volume,src=vscode-open-eos-contract,dst=/root/eos",
+  "workspaceMount": "type=volume,src=davinci,dst=/root/eos",
   "mounts": [
-    "source=/Users/vlad/Desktop/davinci/vscode-open-eos-contract/artifacts,target=/root/eos/build/artifacts,type=bind"
+    "source=/Users/vlad/Desktop/davinci/artifacts,target=/root/eos/build/artifacts,type=bind"
   ],
   "dockerFile": "./Dockerfile",
   "workspaceFolder": "/root/eos",
@@ -36,5 +36,4 @@
     "ziyasal.vscode-open-in-github",
     "actboy168.tasks"
   ]
-
 }
